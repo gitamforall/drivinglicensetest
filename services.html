@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-PIN SERVICES</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+        
+        nav {
+            flex: 20%;
+            margin-right: 2rem;
+        }
+        
+        nav ul {
+            border: 1px solid #ccc;
+            padding: 1rem;
+        }
+        
+        nav li {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+        }
+        
+        nav a {
+            color: #333;
+            display: block;
+            padding: 0.5rem;
+        }
+        
+        #offer-zone {
+            flex: 78%;
+        }
+        
+        #offer-zone h2 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        #offer-zone ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        #offer-zone li {
+            flex: 25%;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+        }
+        
+        #offer-zone a {
+            display: block;
+            color: #333;
+        }
+        
+        #price-drop-alert {
+            flex: 78%;
+            margin-top: 2rem;
+        }
+        
+        #price-drop-alert h2 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        #price-drop-alert p {
+            margin-bottom: 1rem;
+        }
+        
+        #subscribe-btn {
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+
+        marquee {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        @media only screen and (max-width: 768px) {
+            main {
+                padding: 1rem;
+            }
+        
+            nav {
+                flex: 100%;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        
+            #offer-zone li {
+                flex: 50%;
+            }
+        
+            #price-drop-alert {
+                flex: 100%;
+                margin-top: 1rem;
+            }
+        }
+        
+        @media only screen and (min-width: 769px) {
+            main {
+                padding: 2rem;
+            }
+        
+            nav {
+                flex: 20%;
+                margin-right: 2rem;
+                margin-bottom: 0;
+            }
+        
+            #offer-zone li {
+                flex: 25%;
+            }
+        
+            #price-drop-alert {
+                flex: 78%;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>G-PIN SERVICES</h1>
+        <p>E-Governance Portal</p>
+    </header>
+    <main>
+        <marquee behavior="scroll" direction="left">This page is currently under maintenance. We will be back soon!</marquee>
+
+        <nav>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">ಗೃಹ ಲಕ್ಷ್ಮಿ</a></li>
+                <li><a href="#">Print Services</a></li>
+                <li><a href="#">PVC Maker</a></li>
+                <li><a href="#">PAN Services</a></li>
+                <li><a href="paymentservices.html">Payment Services</a></li>
+                <li><a href="#">Governance</a></li>
+                <li><a href="#">IRCTC Services</a></li>
+            </ul>
+        </nav>
+        <section id="offer-zone">
+            <h2>Offer Zone <span>NEW!</span></h2>
+            <ul>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PVC Maker <span>NEW!</span></a></li>
+                <li><a href="#">PAN Services</a></li>
+                <li><a href="#">Payment Services</a></li>
+                <li><a href="#">B) BBPS</a></li>
+                <li><a href="#">Axis SB Acc. Op.</a></li>
+                <li><a href="#">IRCTC Services</a></li>
+                <li><a href="#">Governance</a></li>
+            </ul>
+        </section>
+        <section id="price-drop-alert">
+            <h2>Price Drop Alert <span>: Voter Original PDFS . C</span></h2>
+            <p>Get notified when the price drops!</p>
+            <button id="subscribe-btn">► Subscribe</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 G-PIN SERVICES. All Rights Reserved.</p>
+    </footer>
+</body>
+</html

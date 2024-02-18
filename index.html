@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIX SERVICES</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Georgia', serif;
+      animation: color-change 5s infinite, background-change 5s infinite; /* Add background-change animation */
+    }
+
+    @keyframes background-change {
+      0% { background-color: #f6d4d4; } /* Initial background color */
+      20% { background-color: #e1eaeb; } /* Change to another color */
+      40% { background-color: #f2daf3; } /* Change to another color */
+      60% { background-color: #d1e5d6; } /* Back to initial color */
+      80% { background-color: #ddf48c; } /* Change to another color */
+      100% { background-color: #d1d7f2; } /* Back to initial color */
+    }
+
+    footer {
+      margin-top: auto;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #ddd;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .sidebar.hidden {
+      display: none;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1000; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0,0,0,0.5); /* Black with transparency */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="gpin-removebg-preview.png" alt="Company Logo" style="width: 100px; height: 100px;">
+    <h1>G-PIN SERVICES</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a title="మొదటి పేజీ (Home)" href="index.html">Home</a></li>
+      <li><a title="నా గురించి తెలుసుకోండి (About Us)" href="about.html">About Us</a></li>
+      <li><a title="నా యొక్క సేవలు (Services)" href="services.html">Services</a></li>
+      <li><a title="మమ్మల్ని సంప్రదించండి (Contact)" href="contact.html">Contact</a></li>
+      <li><a title="మా యొక్క ప్రధాన కార్యాలయం (location)" href="location.html">Location </a></li>
+    </ul>
+  </nav>
+  <main>
+    <button id="sidebar-toggle">Toggle Sidebar</button>
+    <div class="sidebar hidden">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#AboutUs">About Us</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Location">Location</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h2 id="hello" style="font-size: 30px;color:#021010">Welcome to our website!</h2>
+      <p id="welcome" style="color: #021010;font-size:larger">Here you can find information about our company, services we offer, and how to contact us.</p>
+      <div class="product-buttons"style="background-color:#fff;">
+        <a href="#" class="product-button" id="openModal">
+          <img src="_01d75ab0-f29d-45ea-8ed3-b25c2b23edaa.jpeg" alt="Product 1" style="width: 180px;">
+          <h4>DRIVING LICENSE DOWNLOAD</h4>
+        </a>
+        <a href="#" id="rcBtn" class="product-button">
+          <img src="_e3d6ee0c-4495-41c7-a3a8-8e6278fdcd92.jpeg" alt="Product 2" style="width: 180px;">
+          <h3>REGISTRATION CERTIFICATE (RC) DOWNLOAD</h3>
+        </a>
+        <a href="product3.html" class="product-button">
+          <img src="product3.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 G-PIN SERVICES. All rights reserved.</p>
+    <p id="visitorCount">Loading visitor count...</p> <!-- Display visitor count here -->
+  </footer>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" style="color: #021010;">
+      <span class="close">&times;</span>
+      <h2>Instructions to Get Your Digital Driving License</h2>
+      <p>Here are the steps to download your digital driving license:</p>
+      <ol>
+        <li>Step 1: AT FIRST SCAN THE QR CODE AND MAKE PAYMENT.</li><br>
+        <li>Step 2: FILL OUT THE DETAILS [TODAY'S DATE;DRIVING LICENSE NUMBER{STARTS WITH AP0...};DATE OF BIRTH;WHAT'S APP NUMBER(*IMPORTANT);ENTER TRANSACTION ID].</li><br>
+        <iframe width="60%" height=auto src="https://www.youtube.com/embed/_jZOeGHXgJI"></iframe>
+        <br>
+        <li>Step 2: AFTER SUCCESSFUL PAYMENT,ENTER GIVEN TRANSACTION NUMBER AND CLICK SUBMIT. YOU WILL RECEIVE A COPY TO WHAT'S APP YOUR DIGITAL COPY</li><br>
+        <li>NOTE : WE WILL DELIVER YOUR PHYSICAL CARD AT YOUR DOORSTEP WHICH COSTS 150 INR ONLY.</li>
+        <li> IMPORTANT : YOU NEED TO PAY 150+40 = 190 INR FOR YOUR DOORSTEP DELIVERY 150 INR FOR CARD 40 INR DIGITAL SENDING.</li> <br>
+        <li>CONTACT FOR ANY ENQUIRIES WHAT'S APP US : +91 9440429208 OR EMAIL US @ gpinservices@gmail.com</li>
+      </ol>
+      <button style="padding: 10px 20px;color:#ddf48c;background-color:#f5dada;text-align: center;"><a href="drivinglicense.html" class="continue-button">Continue</a></button>
+    </div>
+  </div>
+  <!-- The RC Modal -->
+  <div id="rcModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" style="color: #021010;">
+      <span class="close">&times;</span>
+      <h2>Instructions to Download Your Registration Certificate (RC)</h2>
+      <p>Here are the steps to download your Registration Certificate:</p>
+      <ol>
+        <li>Step 1: SCAN THE QR AND MAKE PAYMENT OF 40 INR .</li><br>
+        <li>Step 2: FILL THE DETAILS ['TODAY'S DATE';'VEHICLE NUMBER';'PAYMENT TRANSACTION ID'].</li><br>
+        <li>Step 3: DON'T FORGET TO FILL THE WHAT'S APP NUMBER WE WILL SEND THE CARD THROUGH WHATS APP ONLY .</li><br>
+        <li> IMPORTANT : YOU NEED TO PAY 150+40 = 190 INR FOR YOUR DOORSTEP DELIVERY 150 INR FOR CARD 40 INR DIGITAL SENDING.</li> <br>
+        <li>CONTACT FOR ANY ENQUIRIES WHAT'S APP US : +91 9440429208 OR EMAIL US @ gpinservices@gmail.com</li>
+        <!-- Add more steps if needed -->
+      </ol>
+      <button style="padding: 10px 20px;color:#ddf48c;background-color:#f5dada;text-align: center;"><a href="rc.html" class="continue-button">Continue</a></button>
+
+      <p>This modal will redirect to the RC page after 455 seconds.</p>
+    </div>
+  </div>
+  <script>
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('hidden');
+    });
+
+    // Get the modal for driving license
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("openModal");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+      modal.style.display = "block";
+    };
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    // Get the modal for registration certificate
+    var rcModal = document.getElementById("rcModal");
+    var rcBtn = document.getElementById("rcBtn");
+
+    rcBtn.onclick = function() {
+      rcModal.style.display = "block";
+      setTimeout(function() {
+        window.location.href = "rc.html";
+      }, 455000); // 455 seconds delay
+    };
+
+    // Close the RC modal when the close button is clicked
+    var rcCloseBtn = rcModal.getElementsByClassName("close")[0];
+    rcCloseBtn.onclick = function() {
+      rcModal.style.display = "none";
+    };
+
+    // Close the RC modal when the user clicks anywhere outside of it
+    window.onclick = function(event) {
+      if (event.target == rcModal) {
+        rcModal.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>

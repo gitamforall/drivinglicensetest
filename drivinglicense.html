@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DRIVING LICENSE DOWNLOAD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center;
+            align-items: center;
+            background-image: url('your-background.gif');
+            background-size: cover;
+            color: rgb(222, 9, 62); /* Default text color for the page */
+        }
+
+        #qrCodeContainer,
+        #pictureContainer,
+        #importantMessage,
+        #formContainer,
+        #deliveryInfo {
+            width: 80%; /* Adjust the width based on screen size */
+            max-width: 600px; /* Maximum width for larger screens */
+            margin-bottom: 20px; /* Space between elements */
+            text-align: center;
+            background-color: #ffffff; /* Default background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        #qrCodeContainer img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        #importantMessage {
+            background-color: #d9d2d2;
+            font-weight: bolder;
+        }
+
+        #deliveryInfo {
+            background-color: #f0f0f0;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" style="font-weight: bolder;font-size:larger">
+        <p>TODAYS'S DATE : <div id="date">DATE :</div> </p>
+        
+    </div>
+    <div id="qrCodeContainer">
+        <p style="font-weight: bolder;font-size:larger">SCAN THE BELOW QR TO PAY</p>
+        <img src="WhatsApp Image 2024-02-12 at 1.52.33 PM.jpeg" alt="QR Code">
+        <p>NAME: A SURENDRA</p>
+    </div>
+    
+    <div id="importantMessage">
+        NEED TO PAY 40/- FOR THE DIGITAL COPY OF THE DRIVING LICENSE (NO EDITING, 100% GENUINE SITE)
+    </div>
+    <div id="formContainer">
+        <form>
+            <script src="https://sheetdb.io/s/f/cz3uedt5yk21j.js"></script>
+        </form>
+    </div>
+    <br>
+    <div id="deliveryInfo">
+        <p>WE WILL DELIVER PHYSICAL CARD OF THE DRIVING LICENSE THROUGHOUT INDIA WITH AN ADDITIONAL COST OF 150 RS. (150+40=190/-)</p>
+        <p>PVC DRIVING LICENSE CARD AT YOUR DOORSTEP WITHIN 7 DAYS</p>
+    </div>
+    
+    <script>
+        // Get today's date
+        var today = new Date();
+        var date = today.getDate();
+        var month = today.getMonth() + 1; // Months are zero indexed
+        var year = today.getFullYear();
+
+        // Display the date in the specified format
+        document.getElementById('date').innerText = `${date}/${month}/${year}`;
+    </script>
+</body>
+</html>
